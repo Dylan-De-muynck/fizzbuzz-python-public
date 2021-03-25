@@ -7,4 +7,3 @@ class FizzBuzz():
 class ArgurmentError(Exception):
     def __init__(self):
         super()
-        
