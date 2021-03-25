@@ -18,3 +18,7 @@ class FizzBuzzTest(unittest.TestCase):
         nb = 20
         self.assertEqual(FizzBuzz.isFizzOrBuzz(nb), "Buzz")
 
+    def test_nombre_est_multiple_de_3_et_de_5_donne_fizzbuzz(self):
+        nb = 15
+        self.assertEqual(FizzBuzz.isFizzOrBuzz(nb), "FizzBuzz")
+
