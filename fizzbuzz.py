@@ -1,7 +1,9 @@
 class FizzBuzz():
     @staticmethod
     def isFizzOrBuzz(nb):
-        raise(ArgurmentError())
+        if nb == 0:
+            raise(ArgurmentError())
+
 
 
 class ArgurmentError(Exception):
