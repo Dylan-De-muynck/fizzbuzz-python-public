@@ -22,3 +22,7 @@ class FizzBuzzTest(unittest.TestCase):
         nb = 15
         self.assertEqual(FizzBuzz.isFizzOrBuzz(nb), "FizzBuzz")
 
+    def test_aucun_des_autres_cas_precedent_donne_le_nombre_lui_meme(self):
+        nb = 23
+        self.assertEqual(FizzBuzz.isFizzOrBuzz(nb), nb)
+
