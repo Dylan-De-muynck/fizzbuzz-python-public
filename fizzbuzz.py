@@ -7,6 +7,8 @@ class FizzBuzz():
             return "Fizz"
         if nb % 5 == 0:
             return "Buzz"
+        if nb == 15:
+            return "FizzBuzz"
 
 
 
