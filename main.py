@@ -1,10 +1,24 @@
 from fizzbuzz import *
-import os
+import random
+
+end = False
+AliceRange = random.randrange(1, 9999)
+AliceStart = True
+
+print("#############################################")
+print("################# FIZZBUZZ ##################")
+print("#############################################")
+print("")
+
 try:
-    nb = input("Le nombre d'Alice : ")
+    while end == False:
 
-    print("Bob dit : "+ str(FizzBuzz.isFizzOrBuzz(int(nb))))
+        if (AliceStart == True):
+            print("Alice commence avec : " + str(AliceRange))
+            print("Bob répond : " + str(FizzBuzz.isFizzOrBuzz(int(AliceRange))))
+            AliceStart = False
 
-    os.system("pause")
+        nb = input("Alice continue avec : ")          
+        print("Bob répond : " + str(FizzBuzz.isFizzOrBuzz(int(nb))))
 except ArgurmentError() as e:
     print("Valeur incorrecte")
