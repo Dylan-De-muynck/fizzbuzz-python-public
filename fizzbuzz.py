@@ -5,7 +5,7 @@ class FizzBuzz():
             raise(ArgurmentError())
         if nb % 3 == 0:
             return "Fizz"
-        if nb == 20:
+        if nb % 5 == 0:
             return "Buzz"
 
 
