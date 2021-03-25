@@ -3,7 +3,7 @@ class FizzBuzz():
     def isFizzOrBuzz(nb):
         if nb <= 0:
             raise(ArgurmentError())
-        if nb == 6:
+        if nb % 3 == 0:
             return "Fizz"
 
 
